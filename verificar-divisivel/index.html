@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="FizzBuz.js" defer></script>
+    <link rel="stylesheet" href="styles\css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>FizzBuz</title>
+</head>
+<body>
+        <div class="fizzbuz">
+            <form class="fizzbuz-form">
+                <label>Digite um número:</label>
+                <div class="fizzbuzz-form-box">
+                <input id="numberInput" type="number" maxlength="10" min="0" 
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                oninput="javascript: if (this.value < this.min) this.value = 0"
+                >
+                <button id="clear" onclick="clear()">x</button>
+                    </div>
+                <button id="numberBtn">Enviar</button>
+            </form>
+            <p class="fizzbuz-message"></p>
+        </div>
+  
+</body>
+</html>
